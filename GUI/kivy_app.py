@@ -298,37 +298,37 @@ class PeriodicTableApp(App):
 
         gl.add_widget(Widget())
         gl.add_widget(Button(text='89-103', background_color=actinides, background_normal='', color=font_color,
-                             bold=True))
+                             bold=True, on_press=self.on_click))
         gl.add_widget(Button(text='Ac', background_color=transition, background_normal='', color=font_color,
-                             bold=True))
+                             bold=True, on_press=self.on_click))
         gl.add_widget(Button(text='Th', background_color=actinides, background_normal='', color=font_color,
-                             bold=True))
+                             bold=True, on_press=self.on_click))
         gl.add_widget(Button(text='Pa', background_color=actinides, background_normal='', color=font_color,
-                             bold=True))
+                             bold=True, on_press=self.on_click))
         gl.add_widget(Button(text='U', background_color=actinides, background_normal='', color=font_color,
-                             bold=True))
+                             bold=True, on_press=self.on_click))
         gl.add_widget(Button(text='Np', background_color=actinides, background_normal='', color=font_color,
-                             bold=True))
+                             bold=True, on_press=self.on_click))
         gl.add_widget(Button(text='Pu', background_color=actinides, background_normal='', color=font_color,
-                             bold=True))
+                             bold=True, on_press=self.on_click))
         gl.add_widget(Button(text='Am', background_color=actinides, background_normal='', color=font_color,
-                             bold=True))
+                             bold=True, on_press=self.on_click))
         gl.add_widget(Button(text='Cm', background_color=actinides, background_normal='', color=font_color,
-                             bold=True))
+                             bold=True, on_press=self.on_click))
         gl.add_widget(Button(text='Bk', background_color=actinides, background_normal='', color=font_color,
-                             bold=True))
+                             bold=True, on_press=self.on_click))
         gl.add_widget(Button(text='Cf', background_color=actinides, background_normal='', color=font_color,
-                             bold=True))
+                             bold=True, on_press=self.on_click))
         gl.add_widget(Button(text='Es', background_color=actinides, background_normal='', color=font_color,
-                             bold=True))
+                             bold=True, on_press=self.on_click))
         gl.add_widget(Button(text='Fm', background_color=actinides, background_normal='', color=font_color,
-                             bold=True))
+                             bold=True, on_press=self.on_click))
         gl.add_widget(Button(text='Md', background_color=actinides, background_normal='', color=font_color,
-                             bold=True))
+                             bold=True, on_press=self.on_click))
         gl.add_widget(Button(text='No', background_color=actinides, background_normal='', color=font_color,
-                             bold=True))
+                             bold=True, on_press=self.on_click))
         gl.add_widget(Button(text='Lr', background_color=actinides, background_normal='', color=font_color,
-                             bold=True))
+                             bold=True, on_press=self.on_click))
         gl.add_widget(Widget())
 
         bl.add_widget(al)
@@ -345,11 +345,12 @@ class PeriodicTableApp(App):
             self.update_lable()
 
     def update_lable(self):
-        self.lbl.text = f"""Atomic Number {self.symbol[0]}
-Element {self.symbol[1]},
-Symbol {self.symbol[2]},
-Atomic Mass {self.symbol[3]},
-Period {self.symbol[4]},
-Discoverer {self.symbol[5]},
-Year {self.symbol[6]},
-Number Of Shells {self.symbol[7]}"""
+        self.lbl.text = f"""
+Atomic Number: {self.symbol[0]}
+Element: {self.symbol[1]},
+Symbol: {self.symbol[2]},
+Atomic Mass: {self.symbol[3]},
+Period: {self.symbol[4]},
+Discoverer: {self.symbol[5]},
+Year: {self.symbol[6]},
+Number Of Shells: {self.symbol[7]}"""
