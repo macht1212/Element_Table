@@ -1,0 +1,118 @@
+0,1,Hydrogen,H,1.007,1,Cavendish,1766,1
+1,2,Helium,He,4.002,1,Janssen,1868,1
+2,3,Lithium,Li,6.941,2,Arfvedson,1817,2
+3,4,Beryllium,Be,9.012,2,Vaulquelin,1798,2
+4,5,Boron,B,10.811,2,Gay-Lussac,1808,2
+5,6,Carbon,C,12.011,2,Prehistoric,0,2
+6,7,Nitrogen,N,14.007,2,Rutherford,1772,2
+7,8,Oxygen,O,15.999,2,Priestley/Scheele,1774,2
+8,9,Fluorine,F,18.998,2,Moissan,1886,2
+9,10,Neon,Ne,20.18,2,Ramsay and Travers,1898,2
+10,11,Sodium,Na,22.99,3,Davy,1807,3
+11,12,Magnesium,Mg,24.305,3,Black,1755,3
+12,13,Aluminum,Al,26.982,3,Wshler,1827,3
+13,14,Silicon,Si,28.086,3,Berzelius,1824,3
+14,15,Phosphorus,P,30.974,3,BranBrand,1669,3
+15,16,Sulfur,S,32.065,3,Prehistoric,0,3
+16,17,Chlorine,Cl,35.453,3,Scheele,1774,3
+17,18,Argon,Ar,39.948,3,Rayleigh and Ramsay,1894,3
+18,19,Potassium,K,39.098,4,Davy,1807,4
+19,20,Calcium,Ca,40.078,4,Davy,1808,4
+20,21,Scandium,Sc,44.956,4,Nilson,1878,4
+21,22,Titanium,Ti,47.867,4,Gregor,1791,4
+22,23,Vanadium,V,50.942,4,   del Rio,1801,4
+23,24,Chromium,Cr,51.996,4,Vauquelin,1797,4
+24,25,Manganese,Mn,54.938,4,"Gahn, Scheele",1774,4
+25,26,Iron,Fe,55.845,4,Prehistoric,0,4
+26,27,Cobalt,Co,58.933,4,Brandt,1735,4
+27,28,Nickel,Ni,58.693,4,Cronstedt,1751,4
+28,29,Copper,Cu,63.546,4,Prehistoric,0,4
+29,30,Zinc,Zn,65.38,4,Prehistoric,0,4
+30,31,Gallium,Ga,69.723,4,de Boisbaudran,1875,4
+31,32,Germanium,Ge,72.64,4,Winkler,1886,4
+32,33,Arsenic,As,74.922,4,Albertus Magnus,1250,4
+33,34,Selenium,Se,78.96,4,Berzelius,1817,4
+34,35,Bromine,Br,79.904,4,Balard,1826,4
+35,36,Krypton,Kr,83.798,4,Ramsay and Travers,1898,4
+36,37,Rubidium,Rb,85.468,5,Bunsen and Kirchoff,1861,5
+37,38,Strontium,Sr,87.62,5,Davy,1808,5
+38,39,Yttrium,Y,88.906,5,Gadolin,1794,5
+39,40,Zirconium,Zr,91.224,5,Klaproth,1789,5
+40,41,Niobium,Nb,92.906,5,Hatchett,1801,5
+41,42,Molybdenum,Mo,95.96,5,Scheele,1778,5
+42,43,Technetium,Tc,98.0,5,Perrier and Segr�,1937,5
+43,44,Ruthenium,Ru,101.07,5,Klaus,1844,5
+44,45,Rhodium,Rh,102.906,5,Wollaston,1803,5
+45,46,Palladium,Pd,106.42,5,Wollaston,1803,5
+46,47,Silver,Ag,107.868,5,Prehistoric,0,5
+47,48,Cadmium,Cd,112.411,5,Stromeyer,1817,5
+48,49,Indium,In,114.818,5,Reich and Richter,1863,5
+49,50,Tin,Sn,118.71,5,Prehistoric,0,5
+50,51,Antimony,Sb,121.76,5,Early historic times,0,5
+51,52,Tellurium,Te,127.6,5,von Reichenstein,1782,5
+52,53,Iodine,I,126.904,5,Courtois,1811,5
+53,54,Xenon,Xe,131.293,5,Ramsay and Travers,1898,5
+54,55,Cesium,Cs,132.905,6,Bunsen and Kirchoff,1860,6
+55,56,Barium,Ba,137.327,6,Davy,1808,6
+56,57,Lanthanum,La,138.905,6,Mosander,1839,6
+57,58,Cerium,Ce,140.116,6,Berzelius,1803,6
+58,59,Praseodymium,Pr,140.908,6,von Welsbach,1885,6
+59,60,Neodymium,Nd,144.242,6,von Welsbach,1885,6
+60,61,Promethium,Pm,145.0,6,Marinsky et al.,1945,6
+61,62,Samarium,Sm,150.36,6,Boisbaudran,1879,6
+62,63,Europium,Eu,151.964,6,Demarcay,1901,6
+63,64,Gadolinium,Gd,157.25,6,de Marignac,1880,6
+64,65,Terbium,Tb,158.925,6,Mosander,1843,6
+65,66,Dysprosium,Dy,162.5,6,de Boisbaudran,1886,6
+66,67,Holmium,Ho,164.93,6,Delafontaine and Soret,1878,6
+67,68,Erbium,Er,167.259,6,Mosander,1843,6
+68,69,Thulium,Tm,168.934,6,Cleve,1879,6
+69,70,Ytterbium,Yb,173.054,6,Marignac,1878,6
+70,71,Lutetium,Lu,174.967,6,Urbain/ von Welsbach,1907,6
+71,72,Hafnium,Hf,178.49,6,Coster and von Hevesy,1923,6
+72,73,Tantalum,Ta,180.948,6,Ekeberg,1801,6
+73,74,Wolfram,W,183.84,6,J. and F. d'Elhuyar,1783,6
+74,75,Rhenium,Re,186.207,6,"Noddack, Berg, and Tacke",1925,6
+75,76,Osmium,Os,190.23,6,Tennant,1803,6
+76,77,Iridium,Ir,192.217,6,Tennant,1804,6
+77,78,Platinum,Pt,195.084,6,Ulloa/Wood,1735,6
+78,79,Gold,Au,196.967,6,Prehistoric,0,6
+79,80,Mercury,Hg,200.59,6,Prehistoric,0,6
+80,81,Thallium,Tl,204.383,6,Crookes,1861,6
+81,82,Lead,Pb,207.2,6,Prehistoric,0,6
+82,83,Bismuth,Bi,208.98,6,Geoffroy the Younger,1753,6
+83,84,Polonium,Po,210.0,6,Curie,1898,6
+84,85,Astatine,At,210.0,6,Corson et al.,1940,6
+85,86,Radon,Rn,222.0,6,Dorn,1900,6
+86,87,Francium,Fr,223.0,7,Perey,1939,7
+87,88,Radium,Ra,226.0,7,Pierre and Marie Curie,1898,7
+88,89,Actinium,Ac,227.0,7,Debierne/Giesel,1899,7
+89,90,Thorium,Th,232.038,7,Berzelius,1828,7
+90,91,Protactinium,Pa,231.036,7,Hahn and Meitner,1917,7
+91,92,Uranium,U,238.029,7,Peligot,1841,7
+92,93,Neptunium,Np,237.0,7,McMillan and Abelson,1940,7
+93,94,Plutonium,Pu,244.0,7,Seaborg et al.,1940,7
+94,95,Americium,Am,243.0,7,Seaborg et al.,1944,7
+95,96,Curium,Cm,247.0,7,Seaborg et al.,1944,7
+96,97,Berkelium,Bk,247.0,7,Seaborg et al.,1949,7
+97,98,Californium,Cf,251.0,7,Seaborg et al.,1950,7
+98,99,Einsteinium,Es,252.0,7,Ghiorso et al.,1952,7
+99,100,Fermium,Fm,257.0,7,Ghiorso et al.,1953,7
+100,101,Mendelevium,Md,258.0,7,Ghiorso et al.,1955,7
+101,102,Nobelium,No,259.0,7,Ghiorso et al.,1958,7
+102,103,Lawrencium,Lr,262.0,7,Ghiorso et al.,1961,7
+103,104,Rutherfordium,Rf,261.0,7,Ghiorso et al.,1969,7
+104,105,Dubnium,Db,262.0,7,Ghiorso et al.,1970,7
+105,106,Seaborgium,Sg,266.0,7,Ghiorso et al.,1974,7
+106,107,Bohrium,Bh,264.0,7,Armbruster and M�nzenberg,1981,7
+107,108,Hassium,Hs,267.0,7,Armbruster and M�nzenberg,1983,7
+108,109,Meitnerium,Mt,268.0,7,"GSI, Darmstadt, West Germany",1982,7
+109,110,Darmstadtium ,Ds,271.0,7,0,1994,7
+110,111,Roentgenium ,Rg,272.0,7,0,1994,7
+111,112,Copernicium ,Cn,285.0,7,0,1996,7
+112,113,Nihonium,Nh,284.0,7,0,2004,7
+113,114,Flerovium,Fl,289.0,7,0,1999,7
+114,115,Moscovium,Mc,288.0,7,0,2010,7
+115,116,Livermorium,Lv,292.0,7,0,2000,7
+116,117,Tennessine,Ts,295.0,7,0,2010,7
+117,118,Oganesson,Og,294.0,7,0,2006,7
