@@ -11,21 +11,12 @@ from kivy.uix.label import Label
 
 from SQL.select_info import select_info
 
+from colors import noble, non_metal, transition, posttransition, actinides, alkaline, alkaline_earth, halogens
+from colors import semimetals, other, lanthanides
+
 Config.set('graphics', 'resizable', 0)
 Config.set('graphics', 'width', 1300)
 Config.set('graphics', 'height', 840)
-
-non_metal = [143 / 255, 250 / 255, 139 / 255, 1]
-alkaline = [252 / 255, 77 / 255, 83 / 255, 1]
-alkaline_earth = [255 / 255, 215 / 255, 157 / 255, 1]
-noble = [181 / 255, 255 / 255, 255 / 255, 1]
-semimetals = [193 / 255, 194 / 255, 136 / 255, 1]
-halogens = [255 / 255, 255 / 255, 136 / 255, 1]
-transition = [253 / 255, 176 / 255, 178 / 255, 1]
-posttransition = [193 / 255, 193 / 255, 193 / 255, 1]
-lanthanides = [253 / 255, 172 / 255, 255 / 255, 1]
-actinides = [253 / 255, 130 / 255, 193 / 255, 1]
-other = [143 / 255, 250 / 255, 139 / 255, 1]
 
 
 font_color = [0, 0, 0, 1]
