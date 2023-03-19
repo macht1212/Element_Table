@@ -18,9 +18,19 @@ from info.info import elements, non_metal_elements, alkaline_elements, alkaline_
 from info.info import semimetals_elements, halogens_elements, transition_elements, posttransition_elements
 from info.info import lanthanides_elements, actinides_elements, num2, num1
 
+from info.screen_info import screen_info
+
 Config.set('graphics', 'resizable', 0)
 Config.set('graphics', 'width', 1300)
 Config.set('graphics', 'height', 840)
+
+font = 'Arial'
+bold = True
+
+if '1920' in screen_info().values() and '1080' in screen_info().values():
+    font_size = '22'
+else:
+    font_size = '50'
 
 
 class PeriodicTableApp(App):
@@ -29,7 +39,72 @@ class PeriodicTableApp(App):
 
         al = AnchorLayout(size_hint=[1, .2])
 
-        self.lbl = Label(text='Click on Element', size=[200, 100], pos=[10, 40])
+        gl2 = GridLayout(cols=6, rows=3, padding=[50], spacing=5)
+
+        self.lbl1 = Label(text='Element:', font_family=font,
+                          bold=bold, font_size=font_size)
+
+        self.lbl2 = Label(text=' ', font_family=font,
+                          bold=bold, font_size=font_size)
+
+        self.lbl3 = Label(text='Atomic Mass:', font_family=font,
+                          bold=bold, font_size=font_size)
+
+        self.lbl4 = Label(text=' ', font_family=font,
+                          bold=bold, font_size=font_size)
+
+        self.lbl5 = Label(text='Discoverer:', font_family=font,
+                          bold=bold, font_size=font_size)
+
+        self.lbl6 = Label(text=' ', font_family=font,
+                          bold=bold, font_size=font_size)
+
+        self.lbl7 = Label(text='Symbol:', font_family=font,
+                          bold=bold, font_size=font_size)
+
+        self.lbl8 = Label(text=' ', font_family=font,
+                          bold=bold, font_size=font_size)
+
+        self.lbl9 = Label(text='Period:', font_family=font,
+                          bold=bold, font_size=font_size)
+
+        self.lbl10 = Label(text=' ', font_family=font,
+                           bold=bold, font_size=font_size)
+
+        self.lbl11 = Label(text='Year:', font_family=font,
+                           bold=bold, font_size=font_size)
+
+        self.lbl12 = Label(text=' ', font_family=font,
+                           bold=bold, font_size=font_size)
+
+        self.lbl13 = Label(text='Atomic Number:', font_family=font,
+                           bold=bold, font_size=font_size)
+
+        self.lbl14 = Label(text=' ', font_family=font,
+                           bold=bold, font_size=font_size)
+
+        self.lbl15 = Label(text='Number Of Shells:', font_family=font,
+                           bold=bold, font_size=font_size)
+
+        self.lbl16 = Label(text=' ', font_family=font,
+                           bold=bold, font_size=font_size)
+
+        gl2.add_widget(self.lbl1)
+        gl2.add_widget(self.lbl2)
+        gl2.add_widget(self.lbl3)
+        gl2.add_widget(self.lbl4)
+        gl2.add_widget(self.lbl5)
+        gl2.add_widget(self.lbl6)
+        gl2.add_widget(self.lbl7)
+        gl2.add_widget(self.lbl8)
+        gl2.add_widget(self.lbl9)
+        gl2.add_widget(self.lbl10)
+        gl2.add_widget(self.lbl11)
+        gl2.add_widget(self.lbl12)
+        gl2.add_widget(self.lbl13)
+        gl2.add_widget(self.lbl14)
+        gl2.add_widget(self.lbl15)
+        gl2.add_widget(self.lbl16)
 
         gl = GridLayout(cols=18, rows=9, padding=[50], spacing=5, size_hint=[1, .8])
 
@@ -76,7 +151,7 @@ class PeriodicTableApp(App):
 
         bl.add_widget(al)
         bl.add_widget(gl)
-        al.add_widget(self.lbl)
+        al.add_widget(gl2)
 
         return bl
 
@@ -88,12 +163,11 @@ class PeriodicTableApp(App):
             self.update_label()
 
     def update_label(self):
-        self.lbl.text = f"""
-Atomic Number: {self.symbol[0]}
-Element: {self.symbol[1]},
-Symbol: {self.symbol[2]},
-Atomic Mass: {self.symbol[3]},
-Period: {self.symbol[4]},
-Discoverer: {self.symbol[5]},
-Year: {self.symbol[6]},
-Number Of Shells: {self.symbol[7]}"""
+        self.lbl2.text = self.symbol[1]  # Element
+        self.lbl4.text = self.symbol[3]  # AM
+        self.lbl6.text = self.symbol[5]  # D
+        self.lbl8.text = self.symbol[2]  # S
+        self.lbl10.text = self.symbol[4]  # P
+        self.lbl12.text = self.symbol[6]  # Y
+        self.lbl14.text = self.symbol[0]  # AN
+        self.lbl16.text = self.symbol[7]  # NOS
