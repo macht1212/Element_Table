@@ -17,8 +17,7 @@ from info.info import posttransition, lanthanides, actinides
 from info.info import elements, non_metal_elements, alkaline_elements, alkaline_earth_elements, noble_elements
 from info.info import semimetals_elements, halogens_elements, transition_elements, posttransition_elements
 from info.info import lanthanides_elements, actinides_elements, num2, num1
-
-from info.screen_info import screen_info
+from info.screen_info import screen
 
 Config.set('graphics', 'resizable', 0)
 Config.set('graphics', 'width', 1300)
@@ -26,11 +25,6 @@ Config.set('graphics', 'height', 840)
 
 font = 'Arial'
 bold = True
-
-if '1920' in screen_info().values() and '1080' in screen_info().values():
-    font_size = '22'
-else:
-    font_size = '50'
 
 
 class PeriodicTableApp(App):
@@ -42,52 +36,52 @@ class PeriodicTableApp(App):
         gl2 = GridLayout(cols=6, rows=3, padding=[50], spacing=5)
 
         self.lbl1 = Label(text='Element:', font_family=font,
-                          bold=bold, font_size=font_size)
+                          bold=bold, font_size=screen())
 
         self.lbl2 = Label(text=' ', font_family=font,
-                          bold=bold, font_size=font_size)
+                          bold=bold, font_size=screen())
 
         self.lbl3 = Label(text='Atomic Mass:', font_family=font,
-                          bold=bold, font_size=font_size)
+                          bold=bold, font_size=screen())
 
         self.lbl4 = Label(text=' ', font_family=font,
-                          bold=bold, font_size=font_size)
+                          bold=bold, font_size=screen())
 
         self.lbl5 = Label(text='Discoverer:', font_family=font,
-                          bold=bold, font_size=font_size)
+                          bold=bold, font_size=screen())
 
         self.lbl6 = Label(text=' ', font_family=font,
-                          bold=bold, font_size=font_size)
+                          bold=bold, font_size=screen())
 
         self.lbl7 = Label(text='Symbol:', font_family=font,
-                          bold=bold, font_size=font_size)
+                          bold=bold, font_size=screen())
 
         self.lbl8 = Label(text=' ', font_family=font,
-                          bold=bold, font_size=font_size)
+                          bold=bold, font_size=screen())
 
         self.lbl9 = Label(text='Period:', font_family=font,
-                          bold=bold, font_size=font_size)
+                          bold=bold, font_size=screen())
 
         self.lbl10 = Label(text=' ', font_family=font,
-                           bold=bold, font_size=font_size)
+                           bold=bold, font_size=screen())
 
         self.lbl11 = Label(text='Year:', font_family=font,
-                           bold=bold, font_size=font_size)
+                           bold=bold, font_size=screen())
 
         self.lbl12 = Label(text=' ', font_family=font,
-                           bold=bold, font_size=font_size)
+                           bold=bold, font_size=screen())
 
         self.lbl13 = Label(text='Atomic Number:', font_family=font,
-                           bold=bold, font_size=font_size)
+                           bold=bold, font_size=screen())
 
         self.lbl14 = Label(text=' ', font_family=font,
-                           bold=bold, font_size=font_size)
+                           bold=bold, font_size=screen())
 
         self.lbl15 = Label(text='Number Of Shells:', font_family=font,
-                           bold=bold, font_size=font_size)
+                           bold=bold, font_size=screen())
 
         self.lbl16 = Label(text=' ', font_family=font,
-                           bold=bold, font_size=font_size)
+                           bold=bold, font_size=screen())
 
         gl2.add_widget(self.lbl1)
         gl2.add_widget(self.lbl2)
@@ -156,6 +150,11 @@ class PeriodicTableApp(App):
         return bl
 
     def on_click(self, instance):
+        """
+        Function returns information about element.
+        :param instance:
+        :return: label update after click
+        """
         with sqlite3.connect('PeriodicTable.db') as db:
             curr = db.cursor()
 
@@ -163,6 +162,10 @@ class PeriodicTableApp(App):
             self.update_label()
 
     def update_label(self):
+        """
+        Function returns information about element from SQLite
+        :return: information from DB to labels
+        """
         self.lbl2.text = self.symbol[1]  # Element
         self.lbl4.text = self.symbol[3]  # AM
         self.lbl6.text = self.symbol[5]  # D

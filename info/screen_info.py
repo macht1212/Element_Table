@@ -2,6 +2,10 @@ from screeninfo import get_monitors
 
 
 def screen_info():
+    """
+    Function based on get_monitors from screeninfo library. It's returns dict with screen resolution info.
+    :return: dictionary with screen information
+    """
     for m in get_monitors():
         spl = str(m).split('(')
         spl1 = spl[1].split(')')
@@ -13,3 +17,15 @@ def screen_info():
 
     return dict_
 
+
+def screen():
+    """
+    Function returns font size based on screen resolution.
+    :return: font size
+    """
+    if '1920' in screen_info().values() and '1080' in screen_info().values():
+        font_size = '22'
+    else:
+        font_size = '50'
+
+    return font_size
