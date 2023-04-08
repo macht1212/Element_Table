@@ -24,6 +24,6 @@ GUI package contains kivy app.
 All elements is interactive buttons, pushing on button update information about chemical element.  
 
 Used libs:  
-Kivy v2.1.0
-screeninfo v.0.8.1
-setuptools v.65.6.3
+Kivy v2.1.0  
+screeninfo v.0.8.1  
+setuptools v.65.6.3  
