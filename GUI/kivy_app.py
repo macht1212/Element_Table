@@ -11,17 +11,12 @@ from kivy.uix.label import Label
 
 from SQL.select_info import select_info
 
-from info.info import font_color, non_metal, alkaline
-from info.info import alkaline_earth, noble, semimetals, halogens, transition
-from info.info import posttransition, lanthanides, actinides
+from info.info import font_color
 
-from info.info import elements, non_metal_elements
-from info.info import alkaline_elements, alkaline_earth_elements, \
-    noble_elements
-from info.info import semimetals_elements, halogens_elements
-from info.info import transition_elements, posttransition_elements
-from info.info import lanthanides_elements, actinides_elements, num2, num1
+from info.info import elements
 from info.screen_info import screen
+
+from GUI.bg_color import bg_color
 
 Config.set('graphics', 'resizable', 0)
 Config.set('graphics', 'width', 1300)
@@ -112,45 +107,9 @@ class PeriodicTableApp(App):
 
         for element in elements:
             if element:
-                background_color = None
-                if element in non_metal_elements:
-                    background_color = non_metal
-
-                elif element in alkaline_elements:
-                    background_color = alkaline
-
-                elif element in alkaline_earth_elements:
-                    background_color = alkaline_earth
-
-                elif element in noble_elements:
-                    background_color = noble
-
-                elif element in semimetals_elements:
-                    background_color = semimetals
-
-                elif element in halogens_elements:
-                    background_color = halogens
-
-                elif element in transition_elements:
-                    background_color = transition
-
-                elif element in posttransition_elements:
-                    background_color = posttransition
-
-                elif element in lanthanides_elements:
-                    background_color = lanthanides
-
-                elif element in actinides_elements:
-                    background_color = actinides
-
-                elif element in num1:
-                    background_color = lanthanides
-
-                elif element in num2:
-                    background_color = actinides
 
                 gl.add_widget(Button(text=element,
-                                     background_color=background_color,
+                                     background_color=bg_color(element),
                                      background_normal='',
                                      color=font_color,
                                      bold=True,
