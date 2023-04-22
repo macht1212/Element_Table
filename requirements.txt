@@ -1,3 +1,4 @@
 Kivy~=2.1.0
 screeninfo~=0.8.1
 setuptools~=65.6.3
+flake8~=6.0.0
