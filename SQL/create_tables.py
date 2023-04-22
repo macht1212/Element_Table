@@ -1,6 +1,7 @@
 def create_table(curr):
     """
-    Function creates new table in DB and drop tables before creation (if it necessary)
+    Function creates new table in DB and drop
+    tables before creation (if it necessary)
     :param curr: cursor from connection to DB
     :return: None
     """

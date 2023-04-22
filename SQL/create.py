@@ -15,5 +15,7 @@ with sqlite3.connect('PeriodicTable.db') as db:
 
     create_table(curr)
     for element in elements:
-        add_info(curr, AN=element[0], E=element[1], S=element[2], AM=element[3], P=element[4], D=element[5],
+        add_info(curr, AN=element[0], E=element[1],
+                 S=element[2], AM=element[3],
+                 P=element[4], D=element[5],
                  Y=element[6], NOS=element[7])

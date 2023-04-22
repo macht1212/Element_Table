@@ -13,6 +13,6 @@ def add_info(curr, AN, E, S, AM, P, D, Y, NOS):
     :return: None
     """
     params = (AN, E, S, AM, P, D, Y, NOS)
-    curr.execute(f'''
+    curr.execute('''
     INSERT INTO elements VALUES (?, ?, ?, ?, ?, ?, ?, ?);
     ''', params)

@@ -11,11 +11,15 @@ from kivy.uix.label import Label
 
 from SQL.select_info import select_info
 
-from info.info import font_color, non_metal, alkaline, alkaline_earth, noble, semimetals, halogens, transition
+from info.info import font_color, non_metal, alkaline
+from info.info import alkaline_earth, noble, semimetals, halogens, transition
 from info.info import posttransition, lanthanides, actinides
 
-from info.info import elements, non_metal_elements, alkaline_elements, alkaline_earth_elements, noble_elements
-from info.info import semimetals_elements, halogens_elements, transition_elements, posttransition_elements
+from info.info import elements, non_metal_elements
+from info.info import alkaline_elements, alkaline_earth_elements, \
+    noble_elements
+from info.info import semimetals_elements, halogens_elements
+from info.info import transition_elements, posttransition_elements
 from info.info import lanthanides_elements, actinides_elements, num2, num1
 from info.screen_info import screen
 
@@ -100,46 +104,108 @@ class PeriodicTableApp(App):
         gl2.add_widget(self.lbl15)
         gl2.add_widget(self.lbl16)
 
-        gl = GridLayout(cols=18, rows=9, padding=[50], spacing=5, size_hint=[1, .8])
+        gl = GridLayout(cols=18,
+                        rows=9,
+                        padding=[50],
+                        spacing=5,
+                        size_hint=[1, .8])
 
         for element in elements:
             if element:
                 if element in non_metal_elements:
-                    gl.add_widget(Button(text=element, background_color=non_metal, background_normal='',
-                                         color=font_color, bold=True, on_press=self.on_click))
+                    gl.add_widget(Button(text=element,
+                                         background_color=non_metal,
+                                         background_normal='',
+                                         color=font_color,
+                                         bold=True,
+                                         on_press=self.on_click))
+
                 elif element in alkaline_elements:
-                    gl.add_widget(Button(text=element, background_color=alkaline, background_normal='',
-                                         color=font_color, bold=True, on_press=self.on_click))
+                    gl.add_widget(Button(text=element,
+                                         background_color=alkaline,
+                                         background_normal='',
+                                         color=font_color,
+                                         bold=True,
+                                         on_press=self.on_click))
+
                 elif element in alkaline_earth_elements:
-                    gl.add_widget(Button(text=element, background_color=alkaline_earth, background_normal='',
-                                         color=font_color, bold=True, on_press=self.on_click))
+                    gl.add_widget(Button(text=element,
+                                         background_color=alkaline_earth,
+                                         background_normal='',
+                                         color=font_color,
+                                         bold=True,
+                                         on_press=self.on_click))
+
                 elif element in noble_elements:
-                    gl.add_widget(Button(text=element, background_color=noble, background_normal='',
-                                         color=font_color, bold=True, on_press=self.on_click))
+                    gl.add_widget(Button(text=element,
+                                         background_color=noble,
+                                         background_normal='',
+                                         color=font_color,
+                                         bold=True,
+                                         on_press=self.on_click))
+
                 elif element in semimetals_elements:
-                    gl.add_widget(Button(text=element, background_color=semimetals, background_normal='',
-                                         color=font_color, bold=True, on_press=self.on_click))
+                    gl.add_widget(Button(text=element,
+                                         background_color=semimetals,
+                                         background_normal='',
+                                         color=font_color,
+                                         bold=True,
+                                         on_press=self.on_click))
+
                 elif element in halogens_elements:
-                    gl.add_widget(Button(text=element, background_color=halogens, background_normal='',
-                                         color=font_color, bold=True, on_press=self.on_click))
+                    gl.add_widget(Button(text=element,
+                                         background_color=halogens,
+                                         background_normal='',
+                                         color=font_color,
+                                         bold=True,
+                                         on_press=self.on_click))
+
                 elif element in transition_elements:
-                    gl.add_widget(Button(text=element, background_color=transition, background_normal='',
-                                         color=font_color, bold=True, on_press=self.on_click))
+                    gl.add_widget(Button(text=element,
+                                         background_color=transition,
+                                         background_normal='',
+                                         color=font_color,
+                                         bold=True,
+                                         on_press=self.on_click))
+
                 elif element in posttransition_elements:
-                    gl.add_widget(Button(text=element, background_color=posttransition, background_normal='',
-                                         color=font_color, bold=True, on_press=self.on_click))
+                    gl.add_widget(Button(text=element,
+                                         background_color=posttransition,
+                                         background_normal='',
+                                         color=font_color,
+                                         bold=True,
+                                         on_press=self.on_click))
+
                 elif element in lanthanides_elements:
-                    gl.add_widget(Button(text=element, background_color=lanthanides, background_normal='',
-                                         color=font_color, bold=True, on_press=self.on_click))
+                    gl.add_widget(Button(text=element,
+                                         background_color=lanthanides,
+                                         background_normal='',
+                                         color=font_color,
+                                         bold=True,
+                                         on_press=self.on_click))
+
                 elif element in actinides_elements:
-                    gl.add_widget(Button(text=element, background_color=actinides, background_normal='',
-                                         color=font_color, bold=True, on_press=self.on_click))
+                    gl.add_widget(Button(text=element,
+                                         background_color=actinides,
+                                         background_normal='',
+                                         color=font_color,
+                                         bold=True,
+                                         on_press=self.on_click))
+
                 elif element in num1:
-                    gl.add_widget(Button(text=element, background_color=lanthanides, background_normal='',
-                                         color=font_color, bold=True))
+                    gl.add_widget(Button(text=element,
+                                         background_color=lanthanides,
+                                         background_normal='',
+                                         color=font_color,
+                                         bold=True))
+
                 elif element in num2:
-                    gl.add_widget(Button(text=element, background_color=actinides, background_normal='',
-                                         color=font_color, bold=True))
+                    gl.add_widget(Button(text=element,
+                                         background_color=actinides,
+                                         background_normal='',
+                                         color=font_color,
+                                         bold=True))
+
             else:
                 gl.add_widget(Widget())
 

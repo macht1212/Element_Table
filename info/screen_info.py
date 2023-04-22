@@ -3,7 +3,8 @@ from screeninfo import get_monitors
 
 def screen_info():
     """
-    Function based on get_monitors from screeninfo library. It's returns dict with screen resolution info.
+    Function based on get_monitors from screeninfo library.
+     It's returns dict with screen resolution info.
     :return: dictionary with screen information
     """
     for m in get_monitors():
