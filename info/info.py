@@ -31,45 +31,36 @@ elements = ['H', None, None, None, None, None, None, None,
             'Mt', 'Ds', 'Rg', 'Cn', 'Nh', 'Fl', 'Mc', 'Lv', 'Ts', 'Og',
             None, '57-71', 'La', 'Ce', 'Pr', 'Nd', 'Pm',
             'Sm', 'Eu', 'Gd', 'Tb', 'Dy', 'Ho', 'Er', 'Tm', 'Yb', 'Lu',
-            None, None, '89-103', 'Ac', 'Th', 'Pa', 'U','Np',
+            None, None, '89-103', 'Ac', 'Th', 'Pa', 'U', 'Np',
             'Pu', 'Am', 'Cm', 'Bk', 'Cf', 'Es', 'Fm', 'Md', 'No', 'Lr',
             None]
 
-non_metal_elements = ['H', 'C', 'N', 'O', 'P', 'S', 'Se']
-
-alkaline_elements = ['Li', 'Na', 'K', 'Rb', 'Cs', 'Fr']
-
-alkaline_earth_elements = ['Be', 'Mg', 'Ca', 'Sr', 'Ba', 'Ra']
-
-noble_elements = ['He', 'Ne', 'Ar', 'Kr', 'Xe', 'Rn', 'Og']
-
-semimetals_elements = ['B', 'Si', 'Ge', 'As', 'Sb', 'Te', 'Po']
-
-halogens_elements = ['F', 'Cl', 'Br', 'I', 'At', 'Ts']
-
-transition_elements = ['La', 'Ac', 'Sc', 'Ti', 'V',
-                       'Cr', 'Mn', 'Fe', 'Co', 'Ni', 'Cu', 'Zn',
-                       'Y', 'Zr', 'Nb', 'Mo', 'Tc',
-                       'Ru', 'Rh', 'Pd', 'Ag', 'Cd',
-                       'Hf', 'Ta', 'W', 'Re', 'Os',
-                       'Ir', 'Pt', 'Au', 'Hg',
-                       'Rf', 'Db', 'Sg', 'Bh', 'Hs',
-                       'Mt', 'Ds', 'Rg', 'Cn']
-
-posttransition_elements = ['Al', 'Ga', 'In', 'Sn', 'Tl',
-                           'Pb', 'Bi', 'Nh', 'Fl', 'Mc', 'Lv']
-
-lanthanides_elements = ['Ce', 'Pr', 'Nd', 'Pm', 'Sm',
-                        'Eu', 'Gd', 'Tb', 'Dy', 'Ho',
-                        'Er', 'Tm', 'Yb', 'Lu']
-
-actinides_elements = ['Th', 'Pa', 'U', 'Np', 'Pu',
-                      'Am', 'Cm', 'Bk', 'Cf', 'Es',
-                      'Fm', 'Md', 'No', 'Lr']
-
-num1 = ['57-71']
-
-num2 = ['89-103']
+elements_by_properties = {
+    'non_metal_elements': ['H', 'C', 'N', 'O', 'P', 'S', 'Se'],
+    'alkaline_elements': ['Li', 'Na', 'K', 'Rb', 'Cs', 'Fr'],
+    'alkaline_earth_elements': ['Be', 'Mg', 'Ca', 'Sr', 'Ba', 'Ra'],
+    'noble_elements': ['He', 'Ne', 'Ar', 'Kr', 'Xe', 'Rn', 'Og'],
+    'semimetals_elements': ['B', 'Si', 'Ge', 'As', 'Sb', 'Te', 'Po'],
+    'halogens_elements': ['F', 'Cl', 'Br', 'I', 'At', 'Ts'],
+    'transition_elements': ['La', 'Ac', 'Sc', 'Ti', 'V',
+                            'Cr', 'Mn', 'Fe', 'Co', 'Ni', 'Cu', 'Zn',
+                            'Y', 'Zr', 'Nb', 'Mo', 'Tc',
+                            'Ru', 'Rh', 'Pd', 'Ag', 'Cd',
+                            'Hf', 'Ta', 'W', 'Re', 'Os',
+                            'Ir', 'Pt', 'Au', 'Hg',
+                            'Rf', 'Db', 'Sg', 'Bh', 'Hs',
+                            'Mt', 'Ds', 'Rg', 'Cn'],
+    'posttransition_elements': ['Al', 'Ga', 'In', 'Sn', 'Tl',
+                                'Pb', 'Bi', 'Nh', 'Fl', 'Mc', 'Lv'],
+    'lanthanides_elements': ['Ce', 'Pr', 'Nd', 'Pm', 'Sm',
+                             'Eu', 'Gd', 'Tb', 'Dy', 'Ho',
+                             'Er', 'Tm', 'Yb', 'Lu'],
+    'actinides_elements': ['Th', 'Pa', 'U', 'Np', 'Pu',
+                           'Am', 'Cm', 'Bk', 'Cf', 'Es',
+                           'Fm', 'Md', 'No', 'Lr'],
+    'num1': ['57-71'],
+    'num2': ['89-103']
+}
 
 text = ['Element: ', '', 'Atomic Mass: ', '',
         'Discoverer: ', '', 'Symbol: ', '', 'Period: ', '',
